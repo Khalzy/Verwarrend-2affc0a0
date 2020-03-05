@@ -1,5 +1,5 @@
 
-
+-- TRUNCATE planeten;
 SELECT * FROM planeten;
 
 CREATE TABLE  planeten(
@@ -11,5 +11,8 @@ CREATE TABLE  planeten(
     id mediumint NOT NULL AUTO_INCREMENT primary key
 );
 
+insert into planeten values(
+	"Neptunus","49572","4498252900","17","10"
 
-ALTER TABLE planeten DROP column bezoek_datum;
+);
+UPDATE `sterrenstelsel`.`planeten` SET `naam` = 'Teenalp' WHERE (`id` = '10');
